@@ -418,7 +418,7 @@
     mapChart.showLoading();
 
     // 加载中国省级行政区 GeoJSON（阿里云）
-    $.get('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json', function (geoJson) {
+    $.get('assets/geo/100000_full.json', function (geoJson) {
       mapChart.hideLoading();
       echarts.registerMap('china', geoJson);
 
